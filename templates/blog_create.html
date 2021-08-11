@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Blog</title>
+{% endblock title %}
+
+{% block content %}
+    <h1>Post Yaratish</h1>
+    <form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Saqlash">
+    </form>
+{% endblock content %}
